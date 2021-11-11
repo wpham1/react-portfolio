@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion"
+
+
 export const ParticleContainer = styled.div`
     display: flex;
     height: 800px;
@@ -77,10 +80,15 @@ align-items: center;
     }
 `
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled(motion.h1)`
 color: #fff;
 font-size: 48px;
 text-align: center;
+/* animation: fadeIn 1.3s;
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+} */
 
 @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -95,6 +103,11 @@ export const HeroH2 = styled.h2`
 color: #fff;
 font-size: 36px;
 text-align: center;
+/* animation: fadeIn 1.3s;
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+} */
 
 @media screen and (max-width: 768px) {
     font-size: 30px;

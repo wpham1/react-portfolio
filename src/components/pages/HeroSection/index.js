@@ -1,7 +1,7 @@
 import React from 'react'
 import { HeroContainer, HeroContent, HeroH1, HeroP, HeroH2, HeroBg, GradientBg, ParticleContainer } from './HeroElements'
 import HeroParticles from './HeroParticles'
-
+import { motion } from "framer-motion"
 
 
 const HeroSection = () => {
@@ -15,7 +15,7 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroP>Howdy, I'm</HeroP>
                 
-                <HeroH1>Walter Pham</HeroH1>
+                <HeroH1 whileHover={{ scale: 1.1 }}>Walter Pham</HeroH1>
                 <HeroH2>Full Stack Fledgling with a Front-end Focus</HeroH2>
             </HeroContent>
         </HeroContainer>
