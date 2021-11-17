@@ -21,7 +21,7 @@ export const HeroContainer = styled.div`
 
 
     @media screen and (max-width: 780px){
-        height: 500px;
+        height: 90vh;
     }
 
     `

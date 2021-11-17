@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-    background-color: #fff;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
     z-index: 1;
 
     @media screen and (max-width: 780px){
-        height: 500px;
+        height: 90vh;
     }
 
     `
@@ -20,6 +20,7 @@ export const AboutContent = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    gap: 20px 20px;
     grid-template-areas: 
     "header header image"
     "text text image"

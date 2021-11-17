@@ -10,7 +10,8 @@ background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 10
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    min-height: 500px;
+    min-height: 90vh;
+    /* height: 100vh; */
     max-height: auto;
     max-width: 100%;
     position: relative;
