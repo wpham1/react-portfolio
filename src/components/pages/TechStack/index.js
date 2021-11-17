@@ -10,19 +10,9 @@ import { motion } from "framer-motion"
 
 const TechStack = () => {
     const testa = {
-        scale: [0.9, 1.1],
+        scale: [1, 1.1],
         transition: { duration: 0.15 },
-      }
-    //   const buttonVariants = {
-    //     pressed: {
-    //       scale: 0.5,
-    //     },
-    //     rest: {
-    //       scale: 1,
-    //     },
-    //   };
-
-
+       }
 
     const boxVariants = {
         out: {
@@ -42,14 +32,16 @@ const TechStack = () => {
       
       const iconVariants = {
         out: {
+          opacity: 0,
           y: 400,
         },
         in: {
+          opacity: 100,
           y: 0,
           transition: {
             type: "spring",
             bounce: 0.25,
-            damping: 10,
+            damping: 20,
           },
         },
       };
@@ -59,22 +51,19 @@ const TechStack = () => {
         <TechStackContainer>
             <TechHeading>Tech Stack</TechHeading>
             <TechContent>
-                <TechCard variants={boxVariants} initial="out" animate="in" >
+                <TechCard variants={boxVariants} initial="out" animate="in" 
+                    testa={testa} whileHover={testa}
+>
                     <TechTitle>LANGUAGES</TechTitle>
                     <TechIcons >
                         <TechLinks 
-                        // testa={testa} whileHover={testa}
                         variants={iconVariants}
                         >
                             <TiHtml5/>
                         </TechLinks >
                         <TechLinks  
                         variants={iconVariants}
-    //                     initial="rest"
-    //   whileHover="hover"
-    //   whileTap="pressed"
-    //   variants={buttonVariants} 
-      >
+                              >
                         <IoLogoCss3  />
                         </TechLinks>
                         <TechLinks 
@@ -89,33 +78,35 @@ const TechStack = () => {
                         </TechLinks>
                     </TechIcons>
                 </TechCard>               
-                <TechCard variants={boxVariants} initial="out" animate="in">
+                <TechCard variants={boxVariants} initial="out" animate="in" 
+                    testa={testa} whileHover={testa}>
                     <TechTitle>FRAMEWORKS</TechTitle>
                     <TechIcons>
-                        <TechLinks>
+                        <TechLinks variants={iconVariants}>
                             <SiRubyonrails/>
                         </TechLinks>
-                        <TechLinks>
+                        <TechLinks variants={iconVariants}>
                         <FaReact/>
                         </TechLinks>
                     </TechIcons>
                 </TechCard>               
-                <TechCard>
+                <TechCard variants={boxVariants} initial="out" animate="in" 
+                    testa={testa} whileHover={testa}>
                     <TechTitle>DESIGN TOOLS</TechTitle>
                     <TechIcons>
-                        <TechLinks>
+                        <TechLinks variants={iconVariants}>
                             <FaFigma/>
                         </TechLinks>
-                        <TechLinks>
+                        <TechLinks variants={iconVariants}>
                         <SiAdobe/>
                         </TechLinks>
-                        <TechLinks>
+                        <TechLinks variants={iconVariants}>
                            <FaBootstrap/>
                         </TechLinks>
-                        <TechLinks>
+                        <TechLinks variants={iconVariants}>
                            <FaSass/>
                         </TechLinks>
-                        <TechLinks>
+                        <TechLinks variants={iconVariants}>
                             <SiStyledcomponents/>
                         </TechLinks>
                     </TechIcons>
