@@ -10,9 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home/>} exact />
-        {/* <Route path='/signin' component={SigninPage} exact/> */}
-    
+        <Route path='/' element={<Home/>} exact />   
       </Routes>
     </Router>
   );

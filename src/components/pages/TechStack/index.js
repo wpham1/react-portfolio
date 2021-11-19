@@ -48,7 +48,7 @@ const TechStack = () => {
       
 
     return (
-        <TechStackContainer>
+        <TechStackContainer id="tech">
             <TechHeading>Tech Stack</TechHeading>
             <TechContent>
                 <TechCard variants={boxVariants} initial="out" animate="in" 
