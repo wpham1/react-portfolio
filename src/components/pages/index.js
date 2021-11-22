@@ -20,7 +20,7 @@ const Home = () => {
         <HeroSection/>
         <AboutMe/>
         <TechStack/>
-        <Projects/>
+        {/* <Projects/> */}
         </>
     )
 }

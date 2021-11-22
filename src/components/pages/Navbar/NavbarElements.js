@@ -11,7 +11,7 @@ export const Nav = styled.nav`
     align-items: center;
     font-size: 1rem;
     position: sticky;
-    /* transition: 0.8s all ease; */
+    transition: 0.8s all ease;
     top: 0;
     z-index: 10;
 
@@ -81,6 +81,6 @@ export const NavLinks = styled(LinkS)`
 
     &.active {
         /* navbar border-underline */
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid red;
     }
 `
