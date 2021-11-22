@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroContainer, HeroContent, ImgWrapper, HeroP, HeroH2, HeroBg, CircleText, Sticker, GraphPaper } from './HeroElements'
+import { HeroContainer, HeroContent, ImgWrapper, HeroH2, HeroBg, CircleText, Sticker, GraphPaper } from './HeroElements'
 import { motion } from "framer-motion"
 import Sticker2 from "../../../images/hello-stickerwalter.svg"
 import TextCircle from "../../../images/circle-text.svg"
