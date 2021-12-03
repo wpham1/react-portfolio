@@ -1,6 +1,14 @@
 import styled from "styled-components";
 import { motion } from "framer-motion"
 
+export const BsEmojiSunglasses = styled.p`
+   z-index: 4; 
+    height: auto;
+    position: absolute;
+    width: 100px;
+    color: black;
+`
+
 export const ImgWrapper = styled.div`
     height: auto;
 `
@@ -115,6 +123,8 @@ export const HeroH2 = styled.h2`
     text-align: left;
     padding: 5px;
     display: none;
+    font-family: 'Comfortaa', cursive;
+
 
 @media screen and (max-width: 780px) {
     display: block;

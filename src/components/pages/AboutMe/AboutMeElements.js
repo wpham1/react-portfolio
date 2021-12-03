@@ -6,12 +6,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 justify-content: center;
     align-items: center;
     padding: 0 50px;
-    height: 100vh;
+    height: 100%;
     position: relative;
     z-index: 1;
 
     @media screen and (max-width: 780px){
-        height: 90vh;
+        /* height: 90vh; */
     }
 
     `
@@ -28,7 +28,7 @@ export const AboutContent = styled.div`
     ;
 
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 780px){
     display: flex;
     flex-direction: column;
 }

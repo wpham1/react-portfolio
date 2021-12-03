@@ -7,13 +7,10 @@ const AboutMe = () => {
             <AboutContent>
                 <AboutH1>About Me</AboutH1>
                 <AboutP>Howdy! I'm Walter Pham, animation enthusiast and coding padawan.
-                {"\n"} I'm a full-stack web developer keen to take my training wheels off.
+                {"\n"} I'm a junior full-stack web developer keen to take my training wheels off.
                 {"\n"} I'm currently a student at Coder Academy and accepting opportunities to grow as a Front End Developer.
                 {"\n"} I've got a background in games & animation and love design & motion.
-                {"\n"} I love collaborating on projects and working with people to create fun and exciting experiences.
-                
-                
-                
+                {"\n"} I love collaborating on projects and working with people to create fun and exciting experiences.               
                 </AboutP>
                 <AboutImageWrapper>
                     <AboutImage/>
