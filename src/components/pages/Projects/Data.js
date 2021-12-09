@@ -1,0 +1,52 @@
+export const projObjOne = {
+    id: 'vandals',
+    heading: 'Vandals Sticker Marketplace',
+    description: 'Developed with Ruby on Rails, this two-sided marketplace has User authentication, stripe payment API and CRUD operations. Heroku was used for deployment, Ultrahook, AWS/S3 image hosting and Figma wireframes.',
+    webtext: "Open Vandals in a new tab",
+    // lightBg: false,
+    // lightText: true,
+    // lightTextDesc: true,
+    // topLine: 'This is topline text',
+    // headline: 'This is the headline',
+    // description: 'This is placeholder text',
+    // buttonLabel: 'Get Started',
+    // imgStart: true,
+    html:"https://vandals-marketplace.herokuapp.com/" ,
+    img: require('../../../images/vandals.png').default,
+    // alt: 'Car',
+    // dark: true,
+    // primary: true,
+    // darkText: false
+}
+// export const projObjTwo = {
+//     id: 'discover',
+//     lightBg: true,
+//     lightText: false,
+//     lightTextDesc: false,
+//     topLine: 'This is topline text',
+//     headline: 'This is the headline',
+//     description: 'This is placeholder text',
+//     buttonLabel: 'Get Started',
+//     imgStart: true,
+//     img: require('../../images/projects-collage960x540.png').default,
+//     alt: 'Car',
+//     dark: true,
+//     primary: true,
+//     darkText: true
+// }
+// export const projObjThree = {
+//     id: 'signup',
+//     lightBg: false,
+//     lightText: true,
+//     lightTextDesc: true,
+//     topLine: 'This is topline text',
+//     headline: 'This is the headline',
+//     description: 'This is placeholder text',
+//     buttonLabel: 'Get Started',
+//     imgStart: true,
+//     img: require('../../images/projects-collage960x540.png').default,
+//     alt: 'Car',
+//     dark: true,
+//     primary: true,
+//     darkText: false
+// }

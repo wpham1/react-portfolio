@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import Projects from './Projects';
 import Sidebar from './Sidebar'
 import TechStack from './TechStack';
+import { projObjOne, projObjTwo, projObjThree } from "./Projects/Data"
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const Home = () => {
         <HeroSection/>
         <AboutMe/>
         <TechStack/>
-        {/* <Projects/> */}
+        <Projects {...projObjOne} />
         </>
     )
 }
