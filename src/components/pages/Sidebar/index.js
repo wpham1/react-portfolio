@@ -10,10 +10,10 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle} offset={-80}>About Me</SidebarLink>
-                    <SidebarLink to="tech" onClick={toggle} offset={-80}>Tech Stack</SidebarLink>
-                    <SidebarLink to="projects" onClick={toggle} offset={-80}>Projects</SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle} offset={-80}>Contact Me</SidebarLink>
+                    <SidebarLink to="about" onClick={toggle} offset={-79}>About Me</SidebarLink>
+                    <SidebarLink to="tech" onClick={toggle} offset={-79}>Tech Stack</SidebarLink>
+                    <SidebarLink to="projects" onClick={toggle} offset={-79}>Projects</SidebarLink>
+                    <SidebarLink to="contact" onClick={toggle} offset={-79}>Contact Me</SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

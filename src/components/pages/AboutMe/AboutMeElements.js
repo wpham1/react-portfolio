@@ -31,6 +31,7 @@ export const AboutContent = styled.div`
     @media screen and (max-width: 780px){
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 `
@@ -68,17 +69,19 @@ export const AboutP = styled.p`
 
 @media screen and (max-width: 480px){
     font-size: 16px;
+    /* text-align: center; */
+    line-height: 1.6;
 }
 `
 
 export const AboutImageWrapper = styled.div`
-    background-color: red;
     width: 250px;
     height: 250px;
     border-radius: 250px;
     grid-area: image;
     justify-self: center;
     align-self: center;
+    
     @media screen and (max-width: 768px) {
         width: 150px;
     height: 150px;
@@ -87,11 +90,18 @@ export const AboutImageWrapper = styled.div`
 @media screen and (max-width: 480px){
     width: 100px;
     height: 100px;
-    border-radius: 20px;
 }
 `
 
 
 export const AboutImage = styled.img`
-    display: none;
+    object-fit: contain;
+    width:100%;
+    border-radius: 250px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2) ;
+
+    @media screen and (max-width: 480px){
+    width: 100px;
+    height: 100px;
+    }
 `

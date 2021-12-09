@@ -23,6 +23,10 @@ export const TechStackContainer = styled.div`
 export const TechHeading = styled.h1`
     color: rgba(51, 77, 153, 1);
     font-size: 48px;
+    margin-bottom: -15px;
+    @media screen and (max-width: 480px){
+        font-size: 32px;
+    }
     `
 
 
@@ -38,29 +42,23 @@ export const TechContent = styled(motion.div)`
 export const TechCard = styled(motion.div)`
     height: auto;
     width: 300px;
-    /* background-color: white; */
     border-radius: 20px;
     background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-
-border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
     margin: 20px;
     justify-content: center;
-
 
     @media screen and (max-width: 1050px){
     width: 250px;
     }
 `
 export const TechIcons = styled(motion.div)`
-
-display: flex;
-flex-flow: row wrap;
- justify-content: space-around;
- 
- padding: 10px;
- gap: 0px 20px;
- /* background-color: red; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 0px 20px;
 `
 
 export const TechTitle = styled.h2`
@@ -68,9 +66,11 @@ export const TechTitle = styled.h2`
     text-align: center;
     color: #34649e;
     font-family: 'Source Sans Pro', sans-serif; 
+    @media screen and (max-width: 480px){
+        font-size: 24px;
+    }
 `
 export const TechLinks = styled(motion.div)`
-    /* color: #f28db9; */
     color: #34649e;
     border: 1.5px solid rgba(52, 100, 158, 0.6);
     border-radius: 50px;
@@ -84,10 +84,10 @@ export const TechLinks = styled(motion.div)`
     align-items: center;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15) ;
     /* background-color: white; */
-    /* &:hover {
-        color: #01bf71;
+    &:hover {
+        color: rgba(247, 62, 105, 1);
         transition: 0.3s ease-out;
-    } */
+    }
 `    
 
 export const TechText = styled.p`

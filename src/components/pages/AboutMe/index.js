@@ -1,5 +1,6 @@
 import React from 'react'
 import { AboutContainer, AboutContent, AboutH1, AboutP, AboutImage, AboutImageWrapper } from './AboutMeElements'
+import Photo from '../../../images/yaboi.jpg'
 
 const AboutMe = () => {
     return (
@@ -13,7 +14,7 @@ const AboutMe = () => {
                 {"\n"} I love collaborating on projects and working with people to create fun and exciting experiences.               
                 </AboutP>
                 <AboutImageWrapper>
-                    <AboutImage/>
+                    <AboutImage src={Photo}/>
                 </AboutImageWrapper>
             </AboutContent>
         </AboutContainer>

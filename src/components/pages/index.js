@@ -22,6 +22,8 @@ const Home = () => {
         <AboutMe/>
         <TechStack/>
         <Projects {...projObjOne} />
+        <Projects {...projObjTwo} />
+        <Projects {...projObjThree} />
         </>
     )
 }

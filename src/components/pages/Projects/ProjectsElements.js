@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion"
+
+
 
 export const ProjectsContainer = styled.div`
     min-height: 90vh;
@@ -12,17 +15,22 @@ export const ProjectsContainer = styled.div`
     padding: 0 20px;
     position: relative;
     z-index: 1;
+ 
     
 `
 
 export const ProjectsHeading = styled.h1`
     color: white;
     font-size: 48px;
+    margin-bottom: -18px;
+    @media screen and (max-width: 480px){
+        font-size: 32px;
+    }
     `
 
 export const ProjectWrapper = styled.div`
- background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%235981ee' fill-opacity='0.11'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%235981ee' fill-opacity='0.11'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
     display: grid;
     width: 100%;
     margin: 30px;
@@ -31,15 +39,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     align-items: center;
     border-radius: 20px;
     grid-template-areas: "col1 col2";
-    /* grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2`)};
-
-    @media screen and (max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2`)}
-    } */
 
     @media screen and (max-width: 700px){
         display: flex;
         flex-flow: column wrap;
+    }
+    @media screen and (min-width: 1000px){
+        font-size: 32px;
+        max-width: 1200px;
     }
 
 `
@@ -55,12 +62,12 @@ export const Column2 = styled.div`
 `
 
 export const TextWrapper = styled.div`
-max-width: 540px;
-padding-top: 0;
-padding-bottom: 0px;
-display: flex;
-flex-flow: column wrap;
-word-wrap: break-word;
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    word-wrap: break-word;
 `
 
 export const Heading = styled.h1`
@@ -68,10 +75,9 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    /* color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')}; */
     color: rgba(51, 77, 153, 1);
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        font-size: 24px;
     }
 
 `
@@ -81,10 +87,17 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    /* color: ${({darkText}) => (darkText ? '#010606' : "#fff")}; */
+    @media screen and (max-width: 768px) {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 480px){
+    font-size: 16px;
+    line-height: 1.6;
+}
 `
 
-export const WebLink = styled.a`
+export const WebLink = styled(motion.a)`
     font-size: 18px;
     color: white;
     text-transform: uppercase;
@@ -97,6 +110,9 @@ export const WebLink = styled.a`
 
     &:hover {
         background-color: rgba(35, 50, 95, 0.9);
+    }
+    @media screen and (max-width: 480px){
+        font-size: 14px;
     }
 `
 
@@ -112,5 +128,7 @@ export const Img = styled.img`
 `
 
 export const Icon = styled.i`
-    font-size: 15px;
+    font-size: 17px;
+    margin-left: 10px;
 `
+
