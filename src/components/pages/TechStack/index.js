@@ -5,10 +5,16 @@ import {DiRubyRough} from 'react-icons/di'
 import { IoLogoJavascript, IoLogoCss3 } from 'react-icons/io'
 import { SiRubyonrails, SiAdobe, SiStyledcomponents } from 'react-icons/si'
 import { TiHtml5 } from 'react-icons/ti'
+import { useRef } from "react";
+
 import { motion } from "framer-motion"
 
 
 const TechStack = () => {
+
+    const constraintsRef = useRef(null);
+
+
     const testa = {
         scale: [1, 1.1],
         transition: { duration: 0.15 },
@@ -50,10 +56,11 @@ const TechStack = () => {
     return (
         <TechStackContainer id="tech">
             <TechHeading>Tech Stack</TechHeading>
-            <TechContent>
+            <TechContent                     ref={constraintsRef}
+>
                 <TechCard variants={boxVariants} initial="out" animate="in" 
                     testa={testa} whileHover={testa}
->
+                    drag dragConstraints={constraintsRef} >
                     <TechTitle>LANGUAGES</TechTitle>
                     <TechIcons >
                         <TechLinks 
@@ -79,7 +86,8 @@ const TechStack = () => {
                     </TechIcons>
                 </TechCard>               
                 <TechCard variants={boxVariants} initial="out" animate="in" 
-                    testa={testa} whileHover={testa}>
+                    testa={testa} whileHover={testa}
+                    drag dragConstraints={constraintsRef}>
                     <TechTitle>FRAMEWORKS</TechTitle>
                     <TechIcons>
                         <TechLinks variants={iconVariants}>
@@ -91,7 +99,8 @@ const TechStack = () => {
                     </TechIcons>
                 </TechCard>               
                 <TechCard variants={boxVariants} initial="out" animate="in" 
-                    testa={testa} whileHover={testa}>
+                    testa={testa} whileHover={testa}
+                    drag dragConstraints={constraintsRef}>
                     <TechTitle>DESIGN TOOLS</TechTitle>
                     <TechIcons>
                         <TechLinks variants={iconVariants}>

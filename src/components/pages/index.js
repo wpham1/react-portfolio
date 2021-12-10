@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import Projects from './Projects';
 import Sidebar from './Sidebar'
 import TechStack from './TechStack';
+import Footer from './Footer'
 import { projObjOne, projObjTwo, projObjThree } from "./Projects/Data"
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
         <Projects {...projObjOne} />
         <Projects {...projObjTwo} />
         <Projects {...projObjThree} />
+        <Footer/>
         </>
     )
 }

@@ -16,7 +16,7 @@ export const TechStackContainer = styled.div`
     max-width: 100%;
     position: relative;
     z-index: 1;
-    overflow-y: hidden;
+    overflow: hidden;
 
 
 `
@@ -51,6 +51,9 @@ export const TechCard = styled(motion.div)`
 
     @media screen and (max-width: 1050px){
     width: 250px;
+    }
+    &:hover{
+        outline: 2px solid rgba(32, 56, 179, 0.51);
     }
 `
 export const TechIcons = styled(motion.div)`
