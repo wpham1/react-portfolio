@@ -7,7 +7,7 @@ import Sidebar from './Sidebar'
 import TechStack from './TechStack';
 import Footer from './Footer'
 import { projObjOne, projObjTwo, projObjThree } from "./Projects/Data"
-import Email from './Email';
+import Email from './Contact';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
