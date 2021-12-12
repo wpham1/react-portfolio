@@ -7,6 +7,7 @@ import Sidebar from './Sidebar'
 import TechStack from './TechStack';
 import Footer from './Footer'
 import { projObjOne, projObjTwo, projObjThree } from "./Projects/Data"
+import Email from './Email';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const Home = () => {
         <Projects {...projObjOne} />
         <Projects {...projObjTwo} />
         <Projects {...projObjThree} />
+        <Email/>
         <Footer/>
         </>
     )
