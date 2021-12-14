@@ -32,7 +32,7 @@ const Email = () => {
 
 
     return (
-        <ContactContainer>
+        <ContactContainer id="contact">
             <FormWrapper>
             <ContactTitle>Contact Me!</ContactTitle>
               <Form onSubmit={onSubmit}>
