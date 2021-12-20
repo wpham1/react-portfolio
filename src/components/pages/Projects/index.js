@@ -1,11 +1,11 @@
 import React from 'react'
 import { ProjectsContainer, ProjectsHeading, ProjectWrapper, Column1, Column2, TextWrapper, Heading, Subtitle, ImgWrap, Img, WebLink, Icon } from './ProjectsElements'
 import {BsBoxArrowUpRight} from 'react-icons/bs'
-import { motion } from "framer-motion"
 
 
 const Projects = ({id, img, alt, heading, description, html, webtext, bigid}) => {
 
+    //motion button press
     const btnpress ={
         scale: [1, 1.1],
         transition: { duration: 0.15 },

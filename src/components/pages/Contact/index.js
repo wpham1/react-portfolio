@@ -3,6 +3,8 @@ import { send } from 'emailjs-com'
 import { ContactContainer, ContactTitle, Form, FormWrapper, Inputs, Submit, Message } from './EmailElements';
 
 const Email = () => {
+
+    // set initial state for emails
     const [toSend, setToSend] = useState({
         from_name: '',
         to_name:"walter.pham1@gmail.com",
@@ -10,6 +12,7 @@ const Email = () => {
         reply_to: '',
     });
 
+    // send through to mailer onsubmit
     const onSubmit = (e) => {
         e.preventDefault();
         send(
@@ -26,6 +29,7 @@ const Email = () => {
             });
     };
 
+    // handle input values
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     }

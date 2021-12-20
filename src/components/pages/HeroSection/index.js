@@ -3,7 +3,6 @@ import { HeroContainer, HeroContent, ImgWrapper, HeroH2, HeroBg, CircleText, Sti
 import { motion } from "framer-motion"
 import Sticker2 from "../../../images/hello-stickerwalter.svg"
 import TextCircle from "../../../images/circle-text.svg"
-import { BsEmojiSunglasses } from 'react-icons/bs'
 
 
 const HeroSection = () => {
@@ -12,7 +11,6 @@ const HeroSection = () => {
         <HeroContainer>
             <HeroBg>
                 <GraphPaper/>
-                <BsEmojiSunglasses />
             </HeroBg>
             <HeroContent>
                 <ImgWrapper><Sticker src={Sticker2}/></ImgWrapper>

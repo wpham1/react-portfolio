@@ -7,13 +7,9 @@ import { SiRubyonrails, SiAdobe, SiStyledcomponents } from 'react-icons/si'
 import { TiHtml5 } from 'react-icons/ti'
 import { useRef } from "react";
 
-import { motion } from "framer-motion"
-
-
 const TechStack = () => {
 
     const constraintsRef = useRef(null);
-
 
     const testa = {
         scale: [1, 1.1],
