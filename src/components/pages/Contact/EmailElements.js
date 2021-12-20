@@ -46,7 +46,7 @@ export const Message = styled.input`
     width: 50vw;
     border-radius: 5px;
     border: 1px solid black;
-
+    padding: 10px;
 `
 
 export const Submit = styled.button`
