@@ -7,6 +7,7 @@ export const ContactContainer = styled.div`
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    min-height: 400px;
 `
 
 export const ContactTitle = styled.h1`
@@ -19,17 +20,32 @@ export const ContactTitle = styled.h1`
     }
 `
 export const FormWrapper = styled.div`
-    height: 300px;
+    height: auto;
+    display: inline;
 `
 
 export const Form = styled.form`
     width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
 `
 
 export const Inputs = styled.input`
     border: 1px solid black;
-
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50vw;
+`
+export const Message = styled.input`
+    height: 100px;
+    width: 50vw;
+    border-radius: 5px;
+    border: 1px solid black;
 
 `
 
@@ -40,7 +56,8 @@ height: 40px;
     background-color: rgba(51, 77, 153, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 40px;
-    border-color: white;
+    border: 2px solid rgba(149, 163, 245, 0.64);
+
     color: white;
     &:hover {
         background-color: rgba(35, 50, 95, 1);

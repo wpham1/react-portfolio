@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import { send } from 'emailjs-com'
-import { ContactContainer, ContactTitle, Form, FormWrapper, Inputs, Submit } from './EmailElements';
+import { ContactContainer, ContactTitle, Form, FormWrapper, Inputs, Submit, Message } from './EmailElements';
 
 const Email = () => {
     const [toSend, setToSend] = useState({
@@ -45,17 +45,18 @@ const Email = () => {
                         onChange={handleChange}/>
                         <Inputs
                         type="text"
-                        name="message"
-                        placeholder="Your message"
-                        value={toSend.message}
-                        onChange={handleChange}
-                        />
-                        <Inputs
-                        type="text"
                         name="reply_to"
                         placeholder="Your email"
                         value={toSend.reply_to}
                         onChange={handleChange}
+                        />
+                        <Message
+                        type="text"
+                        name="message"
+                        placeholder="Your message"
+                        value={toSend.message}
+                        onChange={handleChange}
+                        id="message"
                         />
                         <Submit type='submit'>Submit</Submit>
                 </Form>  
