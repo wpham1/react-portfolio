@@ -10,15 +10,13 @@ export const TechStackContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    min-height: 90vh;
+    min-height: 60vh;
     /* height: 100vh; */
-    max-height: auto;
+    /* max-height: auto; */
     max-width: 100%;
     position: relative;
     z-index: 1;
     overflow: hidden;
-
-
 `
 export const TechHeading = styled.h1`
     color: rgba(51, 77, 153, 1);

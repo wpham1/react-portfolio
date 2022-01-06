@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 
 export const ProjectsContainer = styled.div`
-    min-height: 90vh;
+    min-height: 50vh;
     max-height: auto;
     max-width: 100%;
     background-color: #36383c;
