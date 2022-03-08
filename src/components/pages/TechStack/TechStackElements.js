@@ -26,7 +26,16 @@ export const TechHeading = styled.h1`
         font-size: 32px;
     }
     `
+export const HeadingWrapper = styled.div`
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+`
 
+export const DragSpan = styled.span`
+    color: rgba(0, 45, 122, 0.4);
+`
 
 export const TechContent = styled(motion.div)`
     display: flex;

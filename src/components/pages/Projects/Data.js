@@ -19,8 +19,16 @@ export const projObjTwo = {
 export const projObjThree = {
     id: 'waff',
     heading: 'Wes Anderson Film Festival',
-    description: `I am currently working on a Wes Anderson themed Film Festival project where Users will be able to purchase tickets to films using the MERN Stack. I am developing this with 2 other classmates, and will be focusing on Front-End development.`,
-    webtext: "See WAFF wireframes",
-    html:"https://www.behance.net/gallery/132823049/Wes-Anderson-themed-Film-Festival-Wireframes-Figma" ,
+    description: `For our final assessment at Coder Academy, My group and I created a Wes Anderson themed Film Festival Web App where users are able to see film schedules, summaries and book tickets. I developed this with 2 other classmates, and designed the wireframes in Figma and built the front end with React.`,
+    webtext: "See WAFF website",
+    html:"https://wesandersonfilmfestival.netlify.app/" ,
     img: require('../../../images/waff.png').default,
  }
+//  export const projObjFour = {
+//     id: 'tanda',
+//     heading: 'Tanda Internship',
+//     description: `During my 6 weeks at Tanda, we went through intensive technical and soft skill training and worked through an entire product pipeline. As interns we technically scoped and shaped a Feature for the product, created an Epic with tasks and successfully shipped a Feature on our own with the support of senior developers.`,
+//     webtext: "See WAFF website",
+//     html:"https://wesandersonfilmfestival.netlify.app/" ,
+//     img: require('../../../images/waff.png').default,
+//  }

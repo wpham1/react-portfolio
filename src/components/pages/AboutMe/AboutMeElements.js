@@ -32,7 +32,7 @@ export const AboutContent = styled.div`
 
 export const AboutH1 = styled.h1`
     color: rgba(51, 77, 153, 1);
-    font-size: 48px;
+    font-size: 36px;
     text-align: left;
     grid-area: header;
 
@@ -49,11 +49,11 @@ export const AboutP = styled.p`
     display: block;    
     color: rgba(51, 77, 153, 1);
     text-shadow: 0px 0px 4px white;
-    font-size: 24px;
+    font-size: 18px;
     grid-area: text;
     font-family: 'Source Sans Pro', sans-serif;
     white-space: pre-line;
-    line-height: 1.3;
+    line-height: 1.4;
 
     @media screen and (max-width: 768px) {
     font-size: 18px;

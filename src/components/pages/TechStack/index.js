@@ -1,5 +1,5 @@
 import React from 'react'
-import { TechStackContainer, TechHeading, TechContent, TechCard, TechTitle, TechIcons, TechLinks ,TechText } from './TechStackElements'
+import { HeadingWrapper, DragSpan, TechStackContainer, TechHeading, TechContent, TechCard, TechTitle, TechIcons, TechLinks ,TechText } from './TechStackElements'
 import { FaSass, FaReact, FaFigma, FaBootstrap } from 'react-icons/fa'
 import {DiRubyRough} from 'react-icons/di'
 import { IoLogoJavascript, IoLogoCss3 } from 'react-icons/io'
@@ -51,9 +51,11 @@ const TechStack = () => {
 
     return (
         <TechStackContainer id="tech">
+            <HeadingWrapper>
             <TechHeading>Tech Stack</TechHeading>
-            <TechContent                     ref={constraintsRef}
->
+            <DragSpan>(drag me around!)</DragSpan>
+            </HeadingWrapper>
+            <TechContent ref={constraintsRef}>
                 <TechCard variants={boxVariants} initial="out" animate="in" 
                     testa={testa} whileHover={testa}
                     drag dragConstraints={constraintsRef} >
