@@ -12,8 +12,10 @@ const AboutMe = () => {
                 {"\n"} I'm currently a Junior Web Developer at etrainu and accepting opportunities to grow as a Front End Developer and UI/UX Designer.
                 {"\n"} I've got a background in games and animation and am passionate about design and motion that can make people feel good.
                 {"\n"} I love collaborating on projects and working with people to create fun, exciting experiences and absolutely love designing in Figma. 
-                {"\n"} Feel free to reach out to talk Animation and Design!  
+                {"\n"} Feel free to reach out to talk Animation and Design! 
+                {"\n"} <a href='https://www.behance.net/walterpham' style={{textDecoration: "underline"}}>Click on me to see my web designs</a> 
                 </AboutP>
+                 
                 <AboutImageWrapper>
                     <AboutImage src={Photo}/>
                 </AboutImageWrapper>
